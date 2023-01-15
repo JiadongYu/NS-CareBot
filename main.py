@@ -4,9 +4,9 @@ from replied import repliedIds
 
 
 # Set up reddit ids for the reddit API
-client_id = "l7VgXH4PFEUhz4Dqw-LG7A"
+client_id = "<Input client id>"
 
-secret_key = "d4AzMZNbDt100uUTVWKfYZkTFx72FQ"
+secret_key = "<input secret key>"
 
 # Create a list of words that indicate the poster has poor mental health
 trigger_words = ["depression", "anxiety", "suicide", "breakdown", "panic attack",
@@ -24,8 +24,8 @@ with open('Quotes.txt', 'r') as file:
 # Create a reddit object
 reddit = praw.Reddit(client_id=client_id,
                      client_secret=secret_key,
-                     username="NS_CareBot",
-                     password="Superman333!",
+                     username="<insert username>",
+                     password="<insert password>!",
                      user_agent="<console: care_bot: 1.0>")
 
 # Choose a subreddit to access
